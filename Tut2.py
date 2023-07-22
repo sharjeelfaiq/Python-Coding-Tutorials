@@ -1,3 +1,4 @@
+# Variables in Python
 x = 5
 y = "Hello"
 
@@ -18,15 +19,37 @@ seasons = ["winter", "spring", "summer", "winter"]
 # Storing data in a dictionary
 student = {"name": "John", "age": 20, "grade":'A'}
 
+# Casting from String to Integer
+x = "5"
+y = 5
+sum = float(x)+y
+# print(sum)
+
+#Castin from Float to Integer
+num_float = 3.14
+num_int = int(num_float)
+""" print(num_int)
+print(type(num_int))
+print(type(num_float)) """
+
 # Variable Names
 age = 25
-student_name = "John Doe"
 
+# Snake Case
+student_name = "John Doe"
 num_data_points = 100
 feature_name = 'age'
 model_name = 'Random Forest Classifier'
 column_name ='sales'
 data_scientist_name = "Jane Smith"
+
+# Camel Case
+numDataPoints = 100
+featureName = 'age'
+
+# Pascal Case
+NumDataPoints = 100
+FeatureName = 'age'
 
 # Multiple Assignment
 x, y, z = 1, 2, 3
@@ -69,7 +92,7 @@ print("Values:", feature_values) """
 # Global Variables
 var = 20
 
-def my_function():
+def function():
     print(var)
 """ my_function() """
 
@@ -90,3 +113,24 @@ global_config = {
 def train_model():
     print(global_config)
 """ train_model() """
+
+# Example 1: Global Keyword
+global_var = 10
+
+def my_function():
+    global global_var
+    global_var += 5
+    # print(global_var)
+
+my_function()
+# print(global_var)
+
+# Example 2: Using a Global Variable
+global_data = []
+
+def add_item(item):
+    global global_data
+    global_data.append(item)
+
+add_item(int(input("Enter a number: ")))
+print(global_data)
