@@ -34,4 +34,35 @@ text_list = list(text)
 # List Constructor to convert a tuple to a list
 my_tuple = ("apple", "banana", "cherry")
 my_list = list(my_tuple)
-print(my_list)
+# print(my_list)
+
+# Python - Add List Items
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+# print(fruits)
+
+subjects = ["Maths", "Physics", "Chemistry", "English"]
+subjects.insert(2, "Biology")
+# print(subjects)
+
+cosmetics = ["lipstick", "eyeliner", "mascara", "foundation"]
+more_cosmetics = ["nail polish", "blush", "bronzer"]
+use_append = cosmetics.extend(more_cosmetics)
+# print(cosmetics)
+
+# Python - Remove List Items
+
+# Remove Specified Item
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+planets.remove("Earth")
+# print(planets)
+
+# Remove Specified Index
+furniture = ["chair", "table", "bed", "sofa", "cupboard"]
+furniture.pop(4)
+del furniture[2]
+# print(furniture)
+
+gender = ["male", "female", "transgender", "non-binary"]
+gender.clear()
+# print(gender)
